@@ -42,3 +42,5 @@ arrayVariable.forEach(function(item) {
     objectTypesCounter[typeof item] += 1;
   }
 })
+
+console.log(objectTypesCounter);
