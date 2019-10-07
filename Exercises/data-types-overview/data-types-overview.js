@@ -29,14 +29,16 @@ console.log(backticksVariable);
 
 //# Additional
 //1. Declare an array containing different data types.
-let arrayVariable = ['text', 15, true, null]
+let arrayVariable = ['text1', 1, 'text2', 2, 3, true, null]
 
 //2. Iterate through it and collect amount of each data type to object.
-for (i = 0; i < arrayVariable.length; i++) {
-    console.log(typeof arrayVariable[i]);
-}
+let objectTypesCounter = {};
 
-// or using forEach
 arrayVariable.forEach(function(item) {
-    console.log(typeof item)
-});
+  if (objectTypesCounter[typeof item] === undefined) {
+    objectTypesCounter[typeof item] = 1;
+    }
+  else {
+    objectTypesCounter[typeof item] += 1;
+  }
+})
