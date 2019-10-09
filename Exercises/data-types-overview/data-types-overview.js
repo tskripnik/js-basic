@@ -6,6 +6,11 @@ let booleanVariable = true;
 let objectVariable = {first: "objects first value"};
 let nullVariable = null;
 let undefinedVariable;
+let symbolVariable = Symbol("hidden");
+let bigIntVariable = BigInt(Number.MAX_SAFE_INTEGER * 2);
+let stringConsturctorVariable = new String('string created using a constructor');
+let numberConsturctorVariable = new Number(123);
+let booleanConsturctorVariable = new String(true);
 
 //2. Use operator typeof on each of them.
 console.log(typeof stringVariable);
@@ -14,9 +19,14 @@ console.log(typeof booleanVariable);
 console.log(typeof objectVariable);
 console.log(typeof nullVariable);
 console.log(typeof undefinedVariable);
+console.log(typeof symbolVariable);
+console.log(typeof bigIntVariable);
+console.log(typeof(stringConsturctorVariable));
+console.log(typeof(numberConsturctorVariable));
+console.log(typeof(booleanConsturctorVariable));
 
 //3. Demonstrate object's references.
-//Will provide after discussing the topic on the lesson
+
 
 //4. Demonstrate string's backticks features.
 let backticksVariable = `This text will have a:
