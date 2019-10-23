@@ -1,3 +1,5 @@
+/* eslint-disable no-new-wrappers, no-new-object, no-array-constructor */
+
 //# Data types
 //1. Declare a variable on each type using two options: plain creation, creation with constructor.
 let stringVariable = 'inserted text';
