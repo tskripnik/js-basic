@@ -7,3 +7,6 @@
 npm-debug*
 node_modules
 /npm-debug.log
+
+# MacOS specific
+.DS_Store
