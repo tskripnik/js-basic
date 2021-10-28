@@ -1,3 +1,10 @@
+
+      const adminUsersController = new Users(
+            undefined,
+            undefined,
+            loggedInModel.token
+        );
+
 it("error on invalid login", async function () {
         try {
             const resp = await new Users().login(
@@ -13,3 +20,4 @@ it("error on invalid login", async function () {
             expect(err.response.body.error).to.equal("not-found");
         }
     })
+
