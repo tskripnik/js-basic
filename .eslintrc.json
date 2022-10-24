@@ -27,5 +27,17 @@
     ],
     "no-undef": 0,
     "no-unused-vars": 0
-  }
+  },
+    "max-line-length": [
+			true,
+			{
+				"limit": 140,
+				"ignore-pattern": "^import |^export {(.*?)}"
+			}
+		],
+		"no-return-await": true,
+		"jsdoc-format": [true, "check-multiline-start"],
+		"no-redundant-jsdoc": true,
+		"arrow-parens": false,
+		"no-irregular-whitespace": true,
 }
